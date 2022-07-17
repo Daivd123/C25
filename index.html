@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>EPIC ARCHERY</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"
+      integrity="sha512-3CP+e7z5ieYYTIyvRvV3eGVYR67yXg5V2mWfg8pEJJd2mlh8tG/cnDv5scTmRztEYHTksBlpPOmxFOiMtHfZdQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="js/PlayerBase.js"></script>
+    <script src="js/Player.js"></script>
+    <script src="js/Board.js"></script>
+    <script src="js/PlayerArcher.js"></script>
+    <script src="js/PlayerArrow.js"></script>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBiyYxPBNjlHWDTsuYgccBHk-97H_tbXU8",
+  authDomain: "epic-archery-fd756.firebaseapp.com",
+  databaseURL: "https://epic-archery-fd756-default-rtdb.firebaseio.com",
+  projectId: "epic-archery-fd756",
+  storageBucket: "epic-archery-fd756.appspot.com",
+  messagingSenderId: "463919307569",
+  appId: "1:463919307569:web:36bf8bf5f8ef2ae6dd6e10"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
